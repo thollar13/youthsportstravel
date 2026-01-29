@@ -41,7 +41,7 @@ export default function Navigation() {
                         </Link>
 
                         <Link
-                            href="/guires"
+                            href="/guides"
                             className="text-sm font-medium text-gray-600 hover:text-green-700 transition-colors"
                         >
                             Guides
@@ -69,13 +69,13 @@ export default function Navigation() {
                         </Link>
 
                         {/* Sports indicators */}
-                        <div className="flex items-center gap-3 text-sm text-gray-400">
+                        {/* <div className="flex items-center gap-3 text-sm text-gray-400">
                             {SPORTS.map((sport) => (
                                 <span key={sport.slug} className="flex items-center gap-1">
                                     {sport.icon} {sport.name}
                                 </span>
                             ))}
-                        </div>
+                        </div> */}
                     </div>
 
                     {/* Mobile menu button */}
@@ -119,14 +119,14 @@ export default function Navigation() {
                             Browse by State
                         </Link>
 
-                        <div className="border-t border-gray-200 my-2 pt-2">
+                        {/* <div className="border-t border-gray-200 my-2 pt-2">
                             <p className="px-3 py-1 text-xs font-semibold text-gray-400 uppercase">Sports</p>
                             {SPORTS.map((sport) => (
                                 <span key={sport.slug} className="block px-3 py-2 text-gray-500">
                                     {sport.icon} {sport.name}
                                 </span>
                             ))}
-                        </div>
+                        </div> */}
 
                         <div className="border-t border-gray-200 my-2 pt-2">
                             <Link

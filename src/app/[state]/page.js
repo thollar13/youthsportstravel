@@ -202,7 +202,7 @@ function VenuePreviewCard({ venue, stateSlug, index }) {
 // Quick Stats Component
 function QuickStats({ venueCount, totalFields, turfCount, stateName }) {
     return (
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-10">
             <div className="bg-white rounded-xl border border-gray-200 p-5 text-center shadow-sm">
                 <div className="text-3xl font-bold text-green-600">{venueCount}</div>
                 <div className="text-sm text-gray-500 mt-1">Venues</div>
@@ -336,7 +336,7 @@ export default async function StatePage({ params }) {
             )}
 
             {/* Sports Section */}
-            <section className="px-4 py-12 sm:px-6 lg:px-8">
+            <section className="px-4 py-12 pt-0 sm:px-6 lg:px-8">
                 <div className="mx-auto max-w-7xl">
                     <div className="flex items-center justify-between mb-8">
                         <div>
