@@ -121,7 +121,7 @@ export default function ContactPage() {
                     <div className="absolute inset-0 bg-gradient-to-r from-green-900/95 via-green-800/90 to-green-700/80" />
                 </div>
 
-                <div className="relative px-4 py-16 sm:py-20 sm:px-6 lg:px-8">
+                <div className="relative px-4 py-16 sm:py-24 sm:px-6 lg:px-8 h-[375px]">
                     <div className="mx-auto max-w-7xl">
                         {/* Breadcrumb */}
                         <nav className="mb-8 flex items-center gap-2 text-sm text-green-200">

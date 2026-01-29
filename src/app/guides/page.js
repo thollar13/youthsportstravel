@@ -316,7 +316,7 @@ export default function GuidesPage() {
                     <div className="absolute inset-0 bg-gradient-to-r from-green-900/95 via-green-800/90 to-green-700/80" />
                 </div>
 
-                <div className="relative px-4 py-16 sm:py-20 sm:px-6 lg:px-8">
+                <div className="relative px-4 py-16 sm:py-24 sm:px-6 lg:px-8 h-[375px]">
                     <div className="mx-auto max-w-7xl">
                         {/* Breadcrumb */}
                         <nav className="mb-8 flex items-center gap-2 text-sm text-green-200">
@@ -327,25 +327,13 @@ export default function GuidesPage() {
                             <span className="text-white font-medium">Travel Guides</span>
                         </nav>
 
-                        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
-                            <div className="max-w-3xl">
-                                <div className="flex items-center gap-3 mb-4">
-                                    <span className="text-5xl">📚</span>
-                                    <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
-                                        Travel Guides
-                                    </h1>
-                                </div>
-                                <p className="text-xl text-green-100">
-                                    Essential resources for tournament travel. Tips, checklists, and advice from families who've been there.
-                                </p>
-                            </div>
-
-                            <Link
-                                href="/contact"
-                                className="inline-flex items-center gap-2 rounded-lg bg-green-500 px-4 py-2.5 text-sm font-semibold text-white hover:bg-green-400 transition-colors self-start md:self-auto"
-                            >
-                                <span>💡</span> Suggest a Guide
-                            </Link>
+                        <div className="max-w-3xl">
+                            <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
+                                Travel Guides
+                            </h1>
+                            <p className="mt-6 text-xl text-green-100">
+                                Essential resources for tournament travel. Tips, checklists, and advice from families who've been there.
+                            </p>
                         </div>
                     </div>
                 </div>

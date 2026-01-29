@@ -641,75 +641,45 @@ export default async function VenueDetailPage({ params }) {
             <Navigation />
 
             <main className="min-h-screen bg-gray-50">
-                <header className="relative">
+                <header className="relative overflow-hidden">
                     <div className="absolute inset-0">
                         <img
                             src={venueHeroImages[heroImageIndex]}
                             alt={venue.name}
                             className="h-full w-full object-cover"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-r from-green-900/95 via-green-800/85 to-green-900/80" />
+                        <div className="absolute inset-0 bg-gradient-to-r from-green-900/95 via-green-800/90 to-green-700/80" />
                     </div>
 
-                    <div className="relative px-4 py-12 text-white sm:px-6 lg:px-8 lg:py-20">
+                    <div className="relative px-4 py-16 sm:py-24 sm:px-6 lg:px-8 h-[375px]">
                         <div className="mx-auto max-w-7xl">
-                            <div className="mb-6">
+                            <nav className="mb-8">
                                 <Breadcrumbs items={breadcrumbItems} variant="light" />
-                            </div>
+                            </nav>
 
-                            <div className="max-w-4xl">
+                            <div className="max-w-3xl">
                                 <div className="flex flex-wrap items-center gap-2 mb-4">
-                                    <span className="inline-flex items-center gap-1.5 rounded-full bg-white/20 px-4 py-1.5 text-sm font-medium backdrop-blur-sm border border-white/10">
+                                    <span className="inline-flex items-center gap-1.5 rounded-full bg-white/20 px-4 py-1.5 text-sm font-medium text-white backdrop-blur-sm border border-white/10">
                                         📍 {venue.city}, {venue.state}
                                     </span>
                                     {venue.fields && (
-                                        <span className="inline-block rounded-full bg-white/20 px-4 py-1.5 text-sm font-medium backdrop-blur-sm border border-white/10">
+                                        <span className="inline-block rounded-full bg-white/20 px-4 py-1.5 text-sm font-medium text-white backdrop-blur-sm border border-white/10">
                                             ⚾ {venue.fields} Fields
                                         </span>
                                     )}
                                     {venue.surface && (
-                                        <span className={`inline-block rounded-full px-4 py-1.5 text-sm font-medium backdrop-blur-sm border border-white/10 ${venue.surface === "turf" ? "bg-emerald-500/30" : "bg-green-500/30"}`}>
+                                        <span className={`inline-block rounded-full px-4 py-1.5 text-sm font-medium text-white backdrop-blur-sm border border-white/10 ${venue.surface === "turf" ? "bg-emerald-500/30" : "bg-green-500/30"}`}>
                                             {venue.surface === "turf" ? "🌿 Turf" : "🌱 Grass"}
                                         </span>
                                     )}
                                 </div>
 
-                                <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+                                <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
                                     {venue.name}
                                 </h1>
-                                <p className="mt-4 text-xl text-white/90">
-                                    Complete Travel Guide for Tournament Families
+                                <p className="mt-6 text-xl text-green-100">
+                                    Complete travel guide for tournament families with hotels, restaurants, and insider tips.
                                 </p>
-
-                                <div className="mt-8 flex flex-wrap gap-6">
-                                    {hotels.length > 0 && (
-                                        <div className="flex items-center gap-2">
-                                            <span className="text-3xl">🏨</span>
-                                            <div>
-                                                <p className="text-2xl font-bold">{hotels.length}</p>
-                                                <p className="text-sm text-white/80">Hotels</p>
-                                            </div>
-                                        </div>
-                                    )}
-                                    {restaurants.length > 0 && (
-                                        <div className="flex items-center gap-2">
-                                            <span className="text-3xl">🍽️</span>
-                                            <div>
-                                                <p className="text-2xl font-bold">{restaurants.length}</p>
-                                                <p className="text-sm text-white/80">Restaurants</p>
-                                            </div>
-                                        </div>
-                                    )}
-                                    {tips.length > 0 && (
-                                        <div className="flex items-center gap-2">
-                                            <span className="text-3xl">💡</span>
-                                            <div>
-                                                <p className="text-2xl font-bold">{tips.length}</p>
-                                                <p className="text-sm text-white/80">Tips</p>
-                                            </div>
-                                        </div>
-                                    )}
-                                </div>
                             </div>
                         </div>
                     </div>

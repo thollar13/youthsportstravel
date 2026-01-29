@@ -2,13 +2,13 @@ import Link from "next/link";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://tournamentstay.com";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://youthsportsstay.org";
 
 export const metadata = {
-    title: "About TournamentStay | Your Tournament Travel Guide",
-    description: "TournamentStay helps baseball and softball families find the best hotels, restaurants, and travel tips for tournament venues across America.",
+    title: "About Youth Sports Travel | Your Tournament Travel Guide",
+    description: "Youth Sports Travel helps baseball and softball families find the best hotels, restaurants, and travel tips for tournament venues across America.",
     openGraph: {
-        title: "About TournamentStay",
+        title: "About Youth Sports Travel",
         description: "Your complete tournament travel guide",
         url: `${SITE_URL}/about`,
     },
@@ -56,7 +56,7 @@ export default function AboutPage() {
                     <div className="absolute inset-0 bg-gradient-to-r from-green-900/95 via-green-800/90 to-green-700/80" />
                 </div>
 
-                <div className="relative px-4 py-16 sm:py-24 sm:px-6 lg:px-8">
+                <div className="relative px-4 py-16 sm:py-24 sm:px-6 lg:px-8 h-[375px]">
                     <div className="mx-auto max-w-7xl">
                         {/* Breadcrumb */}
                         <nav className="mb-8 flex items-center gap-2 text-sm text-green-200">
@@ -69,7 +69,7 @@ export default function AboutPage() {
 
                         <div className="max-w-3xl">
                             <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
-                                About TournamentStay
+                                About Youth Sports Travel
                             </h1>
                             <p className="mt-6 text-xl text-green-100">
                                 We're tournament parents just like you. After years of scrambling to find hotels,

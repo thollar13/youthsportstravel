@@ -273,13 +273,13 @@ export default function VenuesListingPage() {
                         alt={`${sport.name} field`}
                         className="h-full w-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-r from-green-900/95 via-green-800/90 to-green-700/85" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-green-900/95 via-green-800/90 to-green-700/80" />
                 </div>
 
-                <div className="relative px-4 py-16 sm:px-6 lg:px-8">
+                <div className="relative px-4 py-16 sm:py-24 sm:px-6 lg:px-8 h-[375px]">
                     <div className="mx-auto max-w-7xl">
                         {/* Breadcrumb */}
-                        <nav className="mb-6 flex items-center gap-2 text-sm text-green-200">
+                        <nav className="mb-8 flex items-center gap-2 text-sm text-green-200">
                             <Link href="/" className="hover:text-white transition-colors">Home</Link>
                             <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
                                 <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
@@ -291,22 +291,17 @@ export default function VenuesListingPage() {
                             <span className="text-white font-medium">{sport.name} Venues</span>
                         </nav>
 
-                        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
-                            <div>
-                                <div className="flex items-center gap-3 mb-4">
-                                    <span className="text-5xl">{sport.icon}</span>
-                                    <h1 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-5xl">
-                                        {state.name} {sport.name} Venues
-                                    </h1>
-                                </div>
-                                <p className="max-w-2xl text-lg text-green-100">
-                                    Find {sport.name.toLowerCase()} tournament venues in {state.name} with hotel recommendations,
-                                    restaurants, and insider travel tips from families who've been there.
-                                </p>
-                            </div>
+                        <div className="max-w-3xl">
+                            <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
+                                {state.name} {sport.name} Venues
+                            </h1>
+                            <p className="mt-6 text-xl text-green-100">
+                                Find {sport.name.toLowerCase()} tournament venues in {state.name} with hotel recommendations,
+                                restaurants, and insider travel tips from families who've been there.
+                            </p>
 
                             {/* Quick links */}
-                            <div className="flex flex-wrap gap-3">
+                            {/* <div className="mt-8 flex flex-wrap gap-3">
                                 <Link
                                     href={`/${stateSlug}`}
                                     className="inline-flex items-center gap-2 rounded-lg bg-white/10 backdrop-blur-sm border border-white/20 px-4 py-2.5 text-sm font-semibold text-white hover:bg-white/20 transition-colors"
@@ -319,7 +314,7 @@ export default function VenuesListingPage() {
                                 >
                                     <span>🏟️</span> All Venues
                                 </Link>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
